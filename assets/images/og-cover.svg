@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#101D32"/>
+  <!-- Subtle architectural grid -->
+  <g stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1">
+    <line x1="0" y1="126" x2="1200" y2="126"/>
+    <line x1="0" y1="252" x2="1200" y2="252"/>
+    <line x1="0" y1="378" x2="1200" y2="378"/>
+    <line x1="0" y1="504" x2="1200" y2="504"/>
+    <line x1="240" y1="0" x2="240" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/>
+    <line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="960" y1="0" x2="960" y2="630"/>
+  </g>
+  <rect x="80" y="84" width="56" height="56" rx="12" fill="#1A2D4B" stroke="#B7F0D0" stroke-opacity="0.4"/>
+  <path d="M97 101C97 99.3431 98.3431 98 100 98H109V104H103V116H109V122H100C98.3431 122 97 120.657 97 119V101Z" fill="#FFFFFF"/>
+  <path d="M112 98H118V115C118 118.866 114.866 122 111 122H109V116H111C111.552 116 112 115.552 112 115V98Z" fill="#B7F0D0"/>
+  <text x="154" y="120" fill="#FFFFFF" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="600" letter-spacing="-0.02em">Cikgu Jay Resources</text>
+  <text x="80" y="275" fill="#FFFFFF" font-family="Manrope, Inter, system-ui, sans-serif" font-size="76" font-weight="800" letter-spacing="-0.03em">Smarter Tools.</text>
+  <text x="80" y="365" fill="#B7F0D0" font-family="Manrope, Inter, system-ui, sans-serif" font-size="76" font-weight="800" letter-spacing="-0.03em">Better Teaching.</text>
+  <text x="80" y="445" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="400">Digital software &amp; administrative tools built for modern educators and schools.</text>
+  <rect x="80" y="504" width="320" height="46" rx="8" fill="#1A2D4B"/>
+  <circle cx="106" cy="527" r="5" fill="#B7F0D0"/>
+  <text x="124" y="533" fill="#E2E8F0" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="500">e-Guru Ganti · e-OPR · STiM</text>
+</svg>

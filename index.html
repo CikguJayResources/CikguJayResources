@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cikgu Jay Resources — Perisian Pintar Pengurusan Sekolah</title>
+  <meta
+    name="description"
+    content="Cikgu Jay Resources membangunkan perisian praktikal pengurusan sekolah: STiM, e-Guru Ganti dan e-OPR. Ringkas, tepat dan sedia cetak."
+  />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#101D32" />
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Cikgu Jay Resources" />
+  <meta property="og:title" content="Cikgu Jay Resources — Perisian Pintar Pengurusan Sekolah" />
+  <meta
+    property="og:description"
+    content="Susun jadual waktu induk, agih guru ganti dan jana laporan OPR rasmi dalam beberapa minit."
+  />
+  <meta property="og:image" content="assets/images/og-cover.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Cikgu Jay Resources",
+        "slogan": "Smarter Tools. Better Teaching.",
+        "description": "Independent digital solutions brand focused on developing practical technology for educators and schools."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Bagaimanakah cara membeli produk digital?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pilih produk yang tersedia dalam katalog kami dan klik Lihat Butiran untuk meneliti spesifikasi penuh serta status pelesenan."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Bagaimanakah saya akan menerima produk yang dibeli?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Semua produk adalah 100% digital dan dihantar terus melalui e-mel berserta pautan akses dan panduan permulaan selepas pembayaran disahkan."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body data-i18n-title="meta.title.home">
+  <a href="#main-content" class="skip-link" data-i18n="a11y.skip">Langkau ke kandungan utama</a>
+
+  <!-- ========================================================================
+       A. STICKY NAVIGATION BAR (WITH BM | EN LANGUAGE TOGGLE)
+       ======================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-logo" aria-label="Cikgu Jay Resources">
+        <svg class="brand-logo__mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#101D32"/>
+          <path d="M20 22C20 19.7909 21.7909 18 24 18H36V25H27V39H36V46H24C21.7909 46 20 44.2091 20 42V22Z" fill="#FFFFFF"/>
+          <path d="M39 18H46V38C46 42.4183 42.4183 46 38 46H36V39H38C38.5523 39 39 38.5523 39 38V18Z" fill="#B7F0D0"/>
+          <rect x="39" y="18" width="7" height="7" fill="#B7F0D0"/>
+        </svg>
+        <span>Cikgu Jay Resources</span>
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link is-active" aria-current="page" data-i18n="nav.home">Utama</a></li>
+          <li><a href="pages/products.html" class="nav-link" data-i18n="nav.products">Produk</a></li>
+          <li><a href="pages/about.html" class="nav-link" data-i18n="nav.about">Tentang Kami</a></li>
+          <li><a href="pages/faq.html" class="nav-link" data-i18n="nav.faq">Soalan Lazim</a></li>
+          <li><a href="pages/contact.html" class="nav-link" data-i18n="nav.contact">Hubungi</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switcher" role="group" aria-label="Tukar bahasa laman web" data-i18n-aria="nav.langAria">
+          <button type="button" class="lang-switcher__btn is-active" data-lang-switch="ms" aria-pressed="true">BM</button>
+          <button type="button" class="lang-switcher__btn" data-lang-switch="en" aria-pressed="false">EN</button>
+        </div>
+        <a href="#products" class="btn btn--navy btn--sm" data-i18n="nav.explore">Terokai Produk</a>
+      </div>
+
+      <div class="nav-mobile-Cluster">
+        <div class="lang-switcher" role="group" aria-label="Tukar bahasa laman web" data-i18n-aria="nav.langAria">
+          <button type="button" class="lang-switcher__btn is-active" data-lang-switch="ms" aria-pressed="true">BM</button>
+          <button type="button" class="lang-switcher__btn" data-lang-switch="en" aria-pressed="false">EN</button>
+        </div>
+        <button
+          type="button"
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Open navigation menu"
+        >
+          <svg class="nav-toggle__icon-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg class="nav-toggle__icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <nav aria-label="Mobile navigation">
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link is-active" data-i18n="nav.home">Utama</a></li>
+        <li><a href="pages/products.html" class="mobile-nav-link" data-i18n="nav.products">Produk</a></li>
+        <li><a href="pages/about.html" class="mobile-nav-link" data-i18n="nav.about">Tentang Kami</a></li>
+        <li><a href="pages/faq.html" class="mobile-nav-link" data-i18n="nav.faq">Soalan Lazim</a></li>
+        <li><a href="pages/contact.html" class="mobile-nav-link" data-i18n="nav.contact">Hubungi</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-drawer__footer">
+      <a href="#products" class="btn btn--navy btn--full" data-i18n="nav.explore">Terokai Produk</a>
+      <p class="mobile-drawer__tagline" data-i18n="nav.tagline">Alatan Pintar. Pengajaran Lebih Baik.</p>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- ======================================================================
+         B. REDESIGNED HERO SECTION — TWO-COLUMN + 3-PRODUCT SUITE COMPOSITION
+         ====================================================================== -->
+    <section class="hero dark-context" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <!-- Left Column: Brand Intro, Distinctive Headline, CTAs -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge__indicator" aria-hidden="true"></span>
+            <span data-i18n="hero.eyebrow">Cikgu Jay Resources · Perisian Pendidikan Digital</span>
+          </div>
+
+          <h1 class="hero-title" id="hero-heading">
+            <span class="hero-title__line" data-i18n="hero.title.line1">Perisian Praktikal Untuk</span>
+            <span class="hero-title__line hero-title__accent" data-i18n="hero.title.line2">Pengurusan Sekolah Moden.</span>
+          </h1>
+
+          <p class="hero-description" data-i18n="hero.desc">
+            Susun jadual waktu induk, agih guru ganti dan jana laporan OPR rasmi dalam beberapa minit.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#products" class="btn btn--mint">
+              <span data-i18n="hero.cta.primary">Terokai Produk</span>
+              <svg class="icon-shift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#about" class="btn btn--ghost-light" data-i18n="hero.cta.secondary">Tentang Kami</a>
+          </div>
+
+          <div class="hero-meta">
+            <span class="hero-meta__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              <span data-i18n="hero.meta.1">Terus guna di pelayar web</span>
+            </span>
+            <span class="hero-meta__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span data-i18n="hero.meta.2">Format rasmi sekolah</span>
+            </span>
+            <span class="hero-meta__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span data-i18n="hero.meta.3">Akses digital pantas</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Right Column: 3-Product Interactive Carousel Suite (STiM, e-Guru Ganti, e-OPR) -->
+        <div class="hero-suite">
+          <div class="hero-suite__header">
+            <span data-i18n="hero.showcase.label">Paparan Interaktif Perisian</span>
+            <span class="hero-suite__dots" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </span>
+          </div>
+
+          <div class="hero-suite__cards" id="hero-suite-cards">
+            <!-- Hydrated into multi-slide interactive carousels via js/products.js -->
+            <article class="hero-preview-card hero-preview-card--primary">
+              <div class="hero-preview-card__thumb">
+                <img
+                  src="assets/products/stim/slide-01.jpg"
+                  alt="STiM — School Timetable Manager"
+                  width="1280"
+                  height="760"
+                />
+              </div>
+              <a href="pages/product-details.html?id=stim" class="hero-preview-card__info">
+                <div class="hero-preview-card__top">
+                  <span class="hero-preview-card__tag" data-i18n="hero.showcase.stim.tag">Perisian Pengurusan Sekolah</span>
+                  <span class="hero-preview-card__price-tag"><del>RM 1,000</del> <strong>RM 500</strong> <em class="hero-price-off">-50% · Masa Terhad</em></span>
+                </div>
+                <div class="hero-preview-card__name">STiM</div>
+                <p class="hero-preview-card__desc" data-i18n="hero.showcase.stim.desc">
+                  Jadual induk, kelas &amp; guru bebas pertindihan
+                </p>
+              </a>
+            </article>
+
+            <div class="hero-suite__pair">
+              <article class="hero-preview-card">
+                <div class="hero-preview-card__thumb">
+                  <img
+                    src="assets/products/e-guru-ganti/slide-01.jpg"
+                    alt="e-Guru Ganti"
+                    width="1280"
+                    height="760"
+                  />
+                </div>
+                <a href="pages/product-details.html?id=e-guru-ganti" class="hero-preview-card__info">
+                  <div class="hero-preview-card__top">
+                    <span class="hero-preview-card__tag" data-i18n="hero.showcase.eguru.tag">Pengurusan Sekolah</span>
+                    <span class="hero-preview-card__price-tag"><del>RM 230</del> <strong>RM 100</strong> <em class="hero-price-off">-57%</em></span>
+                  </div>
+                  <div class="hero-preview-card__name">e-Guru Ganti</div>
+                  <p class="hero-preview-card__desc" data-i18n="hero.showcase.eguru.desc">
+                    Agihan relief harian, statistik &amp; slip MMI
+                  </p>
+                </a>
+              </article>
+
+              <article class="hero-preview-card">
+                <div class="hero-preview-card__thumb">
+                  <img
+                    src="assets/products/e-opr/slide-01.jpg"
+                    alt="e-OPR"
+                    width="1280"
+                    height="760"
+                  />
+                </div>
+                <a href="pages/product-details.html?id=e-opr" class="hero-preview-card__info">
+                  <div class="hero-preview-card__top">
+                    <span class="hero-preview-card__tag" data-i18n="hero.showcase.eopr.tag">Pentadbiran Pendidikan</span>
+                    <span class="hero-preview-card__price-tag"><del>RM 150</del> <strong>RM 50</strong> <em class="hero-price-off">-67%</em></span>
+                  </div>
+                  <div class="hero-preview-card__name">e-OPR</div>
+                  <p class="hero-preview-card__desc" data-i18n="hero.showcase.eopr.desc">
+                    Laporan OPR A4 lengkap draf AI &amp; cetakan PDF
+                  </p>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         C. VALUE PROPOSITION — 4 ARCHITECTURAL PILLARS
+         ====================================================================== -->
+    <section class="value-section" aria-labelledby="value-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-index">
+            <span class="section-index__dot" aria-hidden="true"></span>
+            <span data-i18n="value.index">Nilai Utama</span>
+          </div>
+          <h2 class="section-title" id="value-heading" data-i18n="value.title">Direka Mengikut Operasi Sebenar Sekolah</h2>
+          <p class="section-lead" data-i18n="value.lead">
+            Empat kelebihan utama yang mempercepat kerja pentadbiran dan pelaporan guru.
+          </p>
+        </div>
+
+        <div class="value-matrix reveal">
+          <div class="value-cell">
+            <div class="value-cell__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+            </div>
+            <h3 class="value-cell__title" data-i18n="value.1.title">Khusus Untuk Pendidik</h3>
+            <p class="value-cell__desc" data-i18n="value.1.desc">
+              Selaras dengan waktu mengajar, jadual relief dan format laporan rasmi sekolah.
+            </p>
+          </div>
+
+          <div class="value-cell">
+            <div class="value-cell__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="value-cell__title" data-i18n="value.2.title">Jimat Masa Harian</h3>
+            <p class="value-cell__desc" data-i18n="value.2.desc">
+              Siapkan jadual ganti pagi, semakan konflik dan dokumentasi OPR dalam beberapa minit.
+            </p>
+          </div>
+
+          <div class="value-cell">
+            <div class="value-cell__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+            </div>
+            <h3 class="value-cell__title" data-i18n="value.3.title">Dokumen Sedia Cetak</h3>
+            <p class="value-cell__desc" data-i18n="value.3.desc">
+              Eksport jadual dan laporan A4 rasmi terus ke PDF tanpa pelarasan manual.
+            </p>
+          </div>
+
+          <div class="value-cell">
+            <div class="value-cell__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+              </svg>
+            </div>
+            <h3 class="value-cell__title" data-i18n="value.4.title">Mesra Pengguna</h3>
+            <p class="value-cell__desc" data-i18n="value.4.desc">
+              Antara muka kemas yang boleh terus digunakan oleh semua guru pada hari pertama.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         D. FEATURED PRODUCTS (DISTINCT COMPOSITIONS: FLAGSHIP + PAIR + STRIP)
+         ====================================================================== -->
+    <section class="catalog-section" id="products" aria-labelledby="products-heading">
+      <div class="container">
+        <div class="section-header section-header--split reveal">
+          <div>
+            <div class="section-index">
+              <span class="section-index__dot" aria-hidden="true"></span>
+              <span data-i18n="products.index">Katalog Perisian</span>
+            </div>
+            <h2 class="section-title" id="products-heading" data-i18n="products.title">Penyelesaian Digital Utama</h2>
+            <p class="section-lead" data-i18n="products.lead">
+              Leret atau klik anak panah pada setiap kad untuk melihat paparan sebenar perisian.
+            </p>
+          </div>
+          <div>
+            <a href="pages/products.html" class="btn btn--outline" data-i18n="products.viewAll">Katalog Penuh</a>
+          </div>
+        </div>
+
+        <div class="catalog-controls reveal">
+          <div class="category-pills" id="featured-category-pills" role="group" aria-label="Filter products"></div>
+          <div class="catalog-search-wrap">
+            <label for="featured-catalog-search" class="sr-only" data-i18n="products.search.label">Cari produk digital</label>
+            <svg class="catalog-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input
+              type="search"
+              id="featured-catalog-search"
+              class="catalog-search-input"
+              placeholder="Cari STiM, Guru Ganti, OPR..."
+              data-i18n-placeholder="products.search.placeholder"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+
+        <div class="product-showcase-stack reveal" id="featured-product-grid" aria-live="polite">
+          <noscript>
+            <p>Sila aktifkan JavaScript untuk memaparkan katalog produk Cikgu Jay Resources.</p>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         BUILT FOR BETTER SCHOOL MANAGEMENT (EDITORIAL LEDGER SECTION)
+         ====================================================================== -->
+    <section class="better-mgmt-section dark-context" id="better-management" aria-labelledby="better-heading">
+      <div class="container">
+        <div class="better-mgmt-header reveal">
+          <div>
+            <div class="section-index section-index--light">
+              <span class="section-index__dot" aria-hidden="true"></span>
+              <span data-i18n="better.index">Impak Pentadbiran</span>
+            </div>
+            <h2 class="section-title" id="better-heading" data-i18n="better.title">
+              Pengurusan Sekolah Lebih Teratur
+            </h2>
+          </div>
+          <p class="section-lead" data-i18n="better.lead">
+            Urusan jadual dan laporan yang sistematik memberi lebih masa untuk pengajaran murid.
+          </p>
+        </div>
+
+        <div class="better-ledger reveal">
+          <article class="better-ledger__item">
+            <span class="better-ledger__index">01</span>
+            <h3 class="better-ledger__title" data-i18n="better.1.title">Ringkaskan Tugas Harian</h3>
+            <p class="better-ledger__desc" data-i18n="better.1.desc">
+              Gantikan rekod papan putih dan helaian manual dengan satu sistem digital seragam.
+            </p>
+          </article>
+
+          <article class="better-ledger__item">
+            <span class="better-ledger__index">02</span>
+            <h3 class="better-ledger__title" data-i18n="better.2.title">Selaraskan Aliran Kerja</h3>
+            <p class="better-ledger__desc" data-i18n="better.2.desc">
+              Pastikan jadual induk, rekod ganti dan arkib laporan sentiasa tersusun untuk rujukan.
+            </p>
+          </article>
+
+          <article class="better-ledger__item">
+            <span class="better-ledger__index">03</span>
+            <h3 class="better-ledger__title" data-i18n="better.3.title">Jimatkan Masa Guru</h3>
+            <p class="better-ledger__desc" data-i18n="better.3.desc">
+              Hapuskan kerja berulang menyusun gambar laporan dan menyemak pertindihan jadual.
+            </p>
+          </article>
+
+          <article class="better-ledger__item">
+            <span class="better-ledger__index">04</span>
+            <h3 class="better-ledger__title" data-i18n="better.4.title">Inovasi Praktikal</h3>
+            <p class="better-ledger__desc" data-i18n="better.4.desc">
+              Setiap fungsi dibina terus daripada keperluan sebenar bilik guru dan pejabat sekolah.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         INDEPENDENT BRAND STORY / ABOUT SECTION
+         ====================================================================== -->
+    <section class="story-section" id="about" aria-labelledby="story-heading">
+      <div class="container story-grid">
+        <div class="story-prose reveal">
+          <div class="section-index">
+            <span class="section-index__dot" aria-hidden="true"></span>
+            <span data-i18n="story.index">Identiti Jenama</span>
+          </div>
+          <h2 class="section-title" id="story-heading" data-i18n="story.title">
+            Jenama Perisian Pendidikan Bebas
+          </h2>
+          <p data-i18n="story.p1">
+            Cikgu Jay Resources membangunkan perisian praktikal untuk guru dan pentadbir sekolah.
+          </p>
+          <p data-i18n="story.p2">
+            Setiap produk direka kemas, mudah difahami dan terus menyelesaikan beban dokumentasi harian.
+          </p>
+          <a href="pages/about.html" class="btn btn--outline">
+            <span data-i18n="story.cta">Kisah Kami</span>
+            <svg class="icon-shift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <aside class="story-specs reveal" aria-label="Brand attributes">
+          <div class="story-spec-item">
+            <span class="story-spec-item__label" data-i18n="story.pillar1.label">Fokus Utama</span>
+            <div class="story-spec-item__val" data-i18n="story.pillar1.val">Perisian Jadual &amp; Dokumentasi Sekolah</div>
+          </div>
+          <div class="story-spec-item">
+            <span class="story-spec-item__label" data-i18n="story.pillar2.label">Reka Bentuk</span>
+            <div class="story-spec-item__val" data-i18n="story.pillar2.val">Ringkas, Kemas &amp; Mesra Guru</div>
+          </div>
+          <div class="story-spec-item">
+            <span class="story-spec-item__label" data-i18n="story.pillar3.label">Akses Produk</span>
+            <div class="story-spec-item__val" data-i18n="story.pillar3.val">Penghantaran Digital Terus ke E-mel</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         E. WHY CHOOSE US — ASYMMETRIC EDITORIAL SPLIT
+         ====================================================================== -->
+    <section class="why-section" aria-labelledby="why-heading">
+      <div class="container why-layout">
+        <div class="why-intro reveal">
+          <div class="section-index">
+            <span class="section-index__dot" aria-hidden="true"></span>
+            <span data-i18n="why.index">Mengapa Kami</span>
+          </div>
+          <h2 class="section-title" id="why-heading" data-i18n="why.title">
+            Tepat, Mampu Milik &amp; Sedia Untuk Kegunaan Harian
+          </h2>
+          <p class="section-lead" data-i18n="why.lead">
+            Kami membina alatan digital yang memendekkan proses kerja dan menghargai masa guru.
+          </p>
+          <div class="why-callout">
+            <p class="why-callout__text" data-i18n="why.quote">
+              "Sistem pentadbiran yang kemas mengembalikan masa berharga guru kepada murid di bilik darjah."
+            </p>
+          </div>
+        </div>
+
+        <div class="why-principles reveal">
+          <div class="why-item">
+            <div class="why-item__header">
+              <span class="why-item__marker" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <h3 class="why-item__title" data-i18n="why.1.title">Penyelesaian Sebenar</h3>
+            </div>
+            <p class="why-item__desc" data-i18n="why.1.desc">
+              Menangani terus isu jadual waktu induk, agihan guru ganti dan pelaporan OPR.
+            </p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-item__header">
+              <span class="why-item__marker" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <h3 class="why-item__title" data-i18n="why.2.title">Harga Berpatutan</h3>
+            </div>
+            <p class="why-item__desc" data-i18n="why.2.desc">
+              Lesen telus dan mampu milik untuk kegunaan guru individu, panitia serta sekolah.
+            </p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-item__header">
+              <span class="why-item__marker" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <h3 class="why-item__title" data-i18n="why.3.title">Antara Muka Jelas</h3>
+            </div>
+            <p class="why-item__desc" data-i18n="why.3.desc">
+              Susun atur bersih memudahkan penggunaan semua peringkat staf sekolah.
+            </p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-item__header">
+              <span class="why-item__marker" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <h3 class="why-item__title" data-i18n="why.4.title">Kemas Kini Konsisten</h3>
+            </div>
+            <p class="why-item__desc" data-i18n="why.4.desc">
+              Perisian ditambah baik secara berterusan mengikut keperluan semasa pentadbiran sekolah.
+            </p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-item__header">
+              <span class="why-item__marker" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <h3 class="why-item__title" data-i18n="why.5.title">Berpaksikan Sekolah</h3>
+            </div>
+            <p class="why-item__desc" data-i18n="why.5.desc">
+              Dibangunkan khusus mengikut ekosistem pendidikan dan pengurusan sekolah di Malaysia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         F. HOW IT WORKS — 4-STEP SEQUENCE
+         ====================================================================== -->
+    <section class="steps-section" aria-labelledby="steps-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-index">
+            <span class="section-index__dot" aria-hidden="true"></span>
+            <span data-i18n="steps.index">Langkah Mudah</span>
+          </div>
+          <h2 class="section-title" id="steps-heading" data-i18n="steps.title">Cara Pembelian</h2>
+          <p class="section-lead" data-i18n="steps.lead">
+            Miliki akses penuh perisian pilihan anda melalui empat langkah ringkas.
+          </p>
+        </div>
+
+        <ol class="steps-track reveal">
+          <li class="step-item">
+            <span class="step-item__number">01</span>
+            <h3 class="step-item__title" data-i18n="steps.1.title">Pilih Produk</h3>
+            <p class="step-item__desc" data-i18n="steps.1.desc">
+              Semak paparan skrin dan spesifikasi perisian dalam katalog kami.
+            </p>
+          </li>
+
+          <li class="step-item">
+            <span class="step-item__number">02</span>
+            <h3 class="step-item__title" data-i18n="steps.2.title">Sahkan Lesen</h3>
+            <p class="step-item__desc" data-i18n="steps.2.desc">
+              Pilih pakej kegunaan guru individu atau lesen penuh peringkat sekolah.
+            </p>
+          </li>
+
+          <li class="step-item">
+            <span class="step-item__number">03</span>
+            <h3 class="step-item__title" data-i18n="steps.3.title">Bayaran Selamat</h3>
+            <p class="step-item__desc" data-i18n="steps.3.desc">
+              Buat pembayaran melalui perbankan dalam talian (FPX) atau tempahan rasmi.
+            </p>
+          </li>
+
+          <li class="step-item">
+            <span class="step-item__number">04</span>
+            <h3 class="step-item__title" data-i18n="steps.4.title">Akses Segera</h3>
+            <p class="step-item__desc" data-i18n="steps.4.desc">
+              Terima pautan perisian dan panduan lengkap terus ke e-mel anda.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         H. FREQUENTLY ASKED QUESTIONS (ACCESSIBLE ACCORDION)
+         ====================================================================== -->
+    <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+      <div class="container faq-layout">
+        <div class="faq-sidebar reveal">
+          <div class="section-index">
+            <span class="section-index__dot" aria-hidden="true"></span>
+            <span data-i18n="faq.index">Soalan Lazim</span>
+          </div>
+          <h2 class="section-title" id="faq-heading" data-i18n="faq.title">Pertanyaan Umum</h2>
+          <p class="section-lead" data-i18n="faq.lead">
+            Maklumat ringkas berkaitan pembelian lesen, pembayaran dan penghantaran digital.
+          </p>
+
+          <div class="faq-support-box">
+            <h3 class="faq-support-box__title" data-i18n="faq.support.title">Perlukan sebut harga sekolah?</h3>
+            <p class="faq-support-box__desc" data-i18n="faq.support.desc">
+              Hubungi kami untuk urusan pelesenan institusi atau pertanyaan teknikal.
+            </p>
+            <a href="pages/contact.html" class="btn btn--outline btn--sm" data-i18n="faq.support.cta">Hubungi Kami</a>
+          </div>
+        </div>
+
+        <div class="faq-accordion reveal">
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="true" aria-controls="faq-panel-1" id="faq-btn-1">
+              <span data-i18n="faq.q1">Bagaimanakah cara membeli produk digital?</span>
+              <span class="faq-trigger__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              </span>
+            </button>
+            <div id="faq-panel-1" role="region" aria-labelledby="faq-btn-1" class="faq-panel is-open">
+              <div class="faq-panel__inner">
+                <p class="faq-panel__content" data-i18n="faq.a1">
+                  Pilih produk dalam katalog dan klik Lihat Butiran untuk menempah lesen atau membuat pembayaran dalam talian.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-2" id="faq-btn-2">
+              <span data-i18n="faq.q2">Bagaimanakah produk dihantar selepas bayaran?</span>
+              <span class="faq-trigger__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              </span>
+            </button>
+            <div id="faq-panel-2" role="region" aria-labelledby="faq-btn-2" class="faq-panel">
+              <div class="faq-panel__inner">
+                <p class="faq-panel__content" data-i18n="faq.a2">
+                  100% digital. Pautan akses perisian, maklumat lesen dan panduan mula dihantar terus ke e-mel anda.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-3" id="faq-btn-3">
+              <span data-i18n="faq.q3">Adakah transaksi pembayaran selamat?</span>
+              <span class="faq-trigger__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              </span>
+            </button>
+            <div id="faq-panel-3" role="region" aria-labelledby="faq-btn-3" class="faq-panel">
+              <div class="faq-panel__inner">
+                <p class="faq-panel__content" data-i18n="faq.a3">
+                  Ya. Pembayaran disokong oleh gerbang berlesen seperti Billplz / BCL, ToyyibPay dan CHIP melalui sambungan FPX tersulit.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-4" id="faq-btn-4">
+              <span data-i18n="faq.q4">Bolehkah pautan produk diakses semula?</span>
+              <span class="faq-trigger__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              </span>
+            </button>
+            <div id="faq-panel-4" role="region" aria-labelledby="faq-btn-4" class="faq-panel">
+              <div class="faq-panel__inner">
+                <p class="faq-panel__content" data-i18n="faq.a4">
+                  Ya. Simpan e-mel pengesahan anda atau hubungi sokongan kami bersama bukti pembelian untuk penghantaran semula.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-5" id="faq-btn-5">
+              <span data-i18n="faq.q5">Bagaimanakah cara mendapatkan bantuan teknikal?</span>
+              <span class="faq-trigger__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              </span>
+            </button>
+            <div id="faq-panel-5" role="region" aria-labelledby="faq-btn-5" class="faq-panel">
+              <div class="faq-panel__inner">
+                <p class="faq-panel__content" data-i18n="faq.a5">
+                  Hantar mesej melalui halaman Hubungi atau e-mel ke support@cikgujay.com berserta nama produk anda.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         I. CALL TO ACTION
+         ====================================================================== -->
+    <section class="cta-section dark-context" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div class="cta-banner__inner">
+            <h2 class="cta-banner__title" id="cta-heading" data-i18n="cta.title">
+              Urus Sekolah Dengan Lebih Pantas Hari Ini.
+            </h2>
+            <p class="cta-banner__desc" data-i18n="cta.desc">
+              Dapatkan STiM, e-Guru Ganti dan e-OPR pada harga promosi semasa.
+            </p>
+            <a href="pages/products.html" class="btn btn--mint">
+              <span data-i18n="cta.btn">Lihat Semua Produk</span>
+              <svg class="icon-shift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       J. INSTITUTIONAL FOOTER
+       ======================================================================== -->
+  <footer class="site-footer dark-context">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo brand-logo--light">
+            <svg class="brand-logo__mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+              <rect width="64" height="64" rx="14" fill="#172844"/>
+              <path d="M20 22C20 19.7909 21.7909 18 24 18H36V25H27V39H36V46H24C21.7909 46 20 44.2091 20 42V22Z" fill="#FFFFFF"/>
+              <path d="M39 18H46V38C46 42.4183 42.4183 46 38 46H36V39H38C38.5523 39 39 38.5523 39 38V18Z" fill="#B7F0D0"/>
+              <rect x="39" y="18" width="7" height="7" fill="#B7F0D0"/>
+            </svg>
+            <span>Cikgu Jay Resources</span>
+          </a>
+          <p class="footer-brand__desc" data-i18n="footer.desc">
+            Jenama perisian pendidikan bebas yang membangunkan penyelesaian digital praktikal untuk guru dan sekolah.
+          </p>
+          <div class="footer-socials" aria-label="Social media">
+            <a href="pages/contact.html" class="footer-social-link" aria-label="Email Support">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://t.me" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-col__title" data-i18n="footer.nav">Navigasi</h3>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link" data-i18n="nav.home">Utama</a></li>
+            <li><a href="pages/products.html" class="footer-link" data-i18n="nav.allProducts">Semua Produk</a></li>
+            <li><a href="pages/about.html" class="footer-link" data-i18n="nav.about">Tentang Kami</a></li>
+            <li><a href="pages/faq.html" class="footer-link" data-i18n="nav.faq">Soalan Lazim</a></li>
+            <li><a href="pages/contact.html" class="footer-link" data-i18n="nav.contact">Hubungi</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col__title" data-i18n="footer.categories">Kategori Produk</h3>
+          <ul class="footer-links">
+            <li><a href="pages/products.html?category=School+Management+Software" class="footer-link" data-i18n="footer.cat.software">Perisian Pengurusan Sekolah</a></li>
+            <li><a href="pages/products.html?category=School+Management" class="footer-link" data-i18n="footer.cat.mgmt">Pengurusan Sekolah</a></li>
+            <li><a href="pages/products.html?category=Educational+Administration" class="footer-link" data-i18n="footer.cat.admin">Pentadbiran Pendidikan</a></li>
+            <li><a href="pages/product-details.html?id=stim" class="footer-link">STiM</a></li>
+            <li><a href="pages/product-details.html?id=e-guru-ganti" class="footer-link">e-Guru Ganti</a></li>
+            <li><a href="pages/product-details.html?id=e-opr" class="footer-link">e-OPR</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col__title" data-i18n="footer.contact">Hubungi &amp; Sokongan</h3>
+          <ul class="footer-links">
+            <li><a href="mailto:support@cikgujay.com" class="footer-link">support@cikgujay.com</a></li>
+            <li><span class="footer-link" style="cursor: default;" data-i18n="footer.hours">Waktu Sokongan: Isnin – Jumaat, 9:00 PG – 5:00 PTG</span></li>
+            <li><a href="pages/contact.html" class="footer-link" data-i18n="footer.inquiry">Hantar Pertanyaan Sokongan</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer.rights">&copy; 2026 Cikgu Jay Resources. Hak cipta terpelihara. Alatan Pintar. Pengajaran Lebih Baik.</p>
+        <div class="footer-legal">
+          <a href="pages/privacy.html" class="footer-link" data-i18n="footer.privacy">Dasar Privasi</a>
+          <a href="pages/terms.html" class="footer-link" data-i18n="footer.terms">Terma &amp; Syarat</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modular Vanilla JS (i18n -> products -> navigation -> main) -->
+  <script defer src="js/i18n.js"></script>
+  <script defer src="js/products.js"></script>
+  <script defer src="js/navigation.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+</html>

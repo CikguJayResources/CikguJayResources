@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <!-- Distinct Composition 3: e-OPR — Editorial Split Form-to-A4 Document Architecture -->
+  <rect width="800" height="500" fill="#15243D"/>
+  <rect x="420" y="0" width="380" height="500" fill="#101D32"/>
+
+  <!-- Left Structured Input Builder Panel -->
+  <rect x="58" y="56" width="324" height="388" rx="10" fill="#FFFFFF"/>
+  <rect x="82" y="80" width="56" height="22" rx="4" fill="#101D32"/>
+  <text x="110" y="95" text-anchor="middle" fill="#B7F0D0" font-family="Manrope, Inter, sans-serif" font-size="11" font-weight="800">e-OPR</text>
+  <rect x="150" y="87" width="110" height="8" rx="4" fill="#172033"/>
+
+  <line x1="82" y1="118" x2="358" y2="118" stroke="#E2E8F0"/>
+
+  <rect x="82" y="138" width="84" height="6" rx="3" fill="#64748B"/>
+  <rect x="82" y="152" width="276" height="34" rx="5" fill="#F5F7FA" stroke="#E2E8F0"/>
+  <rect x="96" y="166" width="174" height="6" rx="3" fill="#172033"/>
+
+  <rect x="82" y="204" width="96" height="6" rx="3" fill="#64748B"/>
+  <rect x="82" y="218" width="132" height="34" rx="5" fill="#F5F7FA" stroke="#E2E8F0"/>
+  <rect x="96" y="232" width="76" height="6" rx="3" fill="#172033"/>
+  <rect x="226" y="218" width="132" height="34" rx="5" fill="#F5F7FA" stroke="#E2E8F0"/>
+  <rect x="240" y="232" width="82" height="6" rx="3" fill="#172033"/>
+
+  <rect x="82" y="270" width="112" height="6" rx="3" fill="#64748B"/>
+  <rect x="82" y="284" width="276" height="72" rx="5" fill="#F5F7FA" stroke="#E2E8F0"/>
+  <rect x="96" y="300" width="212" height="6" rx="3" fill="#475569"/>
+  <rect x="96" y="316" width="184" height="6" rx="3" fill="#475569"/>
+  <rect x="96" y="332" width="128" height="6" rx="3" fill="#94A3B8"/>
+
+  <rect x="82" y="378" width="276" height="40" rx="6" fill="#B7F0D0"/>
+  <rect x="166" y="395" width="108" height="7" rx="3.5" fill="#101D32"/>
+
+  <!-- Right Floating Precision A4 One-Page Report Sheet -->
+  <rect x="444" y="38" width="298" height="424" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <!-- A4 Document Header -->
+  <rect x="468" y="62" width="250" height="44" rx="5" fill="#101D32"/>
+  <rect x="484" y="76" width="68" height="6" rx="3" fill="#B7F0D0"/>
+  <rect x="484" y="88" width="154" height="7" rx="3.5" fill="#FFFFFF"/>
+
+  <!-- A4 Structured Metadata Cells -->
+  <rect x="468" y="118" width="120" height="38" rx="4" fill="#F5F7FA" stroke="#E2E8F0"/>
+  <rect x="480" y="128" width="48" height="5" rx="2.5" fill="#94A3B8"/>
+  <rect x="480" y="139" width="82" height="6" rx="3" fill="#172033"/>
+
+  <rect x="598" y="118" width="120" height="38" rx="4" fill="#F5F7FA" stroke="#E2E8F0"/>
+  <rect x="610" y="128" width="54" height="5" rx="2.5" fill="#94A3B8"/>
+  <rect x="610" y="139" width="76" height="6" rx="3" fill="#172033"/>
+
+  <!-- A4 Summary Prose Lines -->
+  <rect x="468" y="168" width="250" height="54" rx="4" fill="#F5F7FA"/>
+  <rect x="480" y="180" width="212" height="5" rx="2.5" fill="#475569"/>
+  <rect x="480" y="193" width="194" height="5" rx="2.5" fill="#475569"/>
+  <rect x="480" y="206" width="136" height="5" rx="2.5" fill="#94A3B8"/>
+
+  <!-- 2x2 Auto-Fitted Photo Evidence Grid -->
+  <rect x="468" y="234" width="120" height="76" rx="5" fill="#E2E8F0"/>
+  <circle cx="492" cy="256" r="8" fill="#CBD5E1"/>
+  <path d="M476 298L506 270L528 288L548 268L580 298H476Z" fill="#94A3B8" fill-opacity="0.45"/>
+
+  <rect x="598" y="234" width="120" height="76" rx="5" fill="#E2E8F0"/>
+  <circle cx="622" cy="256" r="8" fill="#CBD5E1"/>
+  <path d="M606 298L636 270L658 288L678 268L710 298H606Z" fill="#94A3B8" fill-opacity="0.45"/>
+
+  <rect x="468" y="320" width="120" height="76" rx="5" fill="#E2E8F0"/>
+  <circle cx="492" cy="342" r="8" fill="#CBD5E1"/>
+  <path d="M476 384L506 356L528 374L548 354L580 384H476Z" fill="#94A3B8" fill-opacity="0.45"/>
+
+  <rect x="598" y="320" width="120" height="76" rx="5" fill="#E2E8F0"/>
+  <circle cx="622" cy="342" r="8" fill="#CBD5E1"/>
+  <path d="M606 384L636 356L658 374L678 354L710 384H606Z" fill="#94A3B8" fill-opacity="0.45"/>
+
+  <!-- Signature & Verification Line -->
+  <line x1="468" y1="414" x2="718" y2="414" stroke="#E2E8F0"/>
+  <rect x="468" y="428" width="98" height="6" rx="3" fill="#94A3B8"/>
+  <rect x="646" y="423" width="72" height="18" rx="4" fill="#EAFBF1" stroke="#B7F0D0"/>
+</svg>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cikgujay.com/sitemap.xml
