@@ -146,12 +146,12 @@
         const readyLink = i18n ? i18n.t("contactPage.form.readyLink") : "Open email";
         feedbackEl.innerHTML = `
           <strong>${readyStrong}</strong> ${readyBody}
-          <a href="mailto:support@cikgujay.com?subject=${mailSubject}&body=${mailBody}" style="text-decoration: underline; font-weight: 700;">${readyLink}</a>.
+          <a href="mailto:jaypah2@gmail.com?subject=${mailSubject}&body=${mailBody}" style="text-decoration: underline; font-weight: 700;">${readyLink}</a>.
         `;
         feedbackEl.classList.add("is-visible");
       }
 
-      window.location.href = `mailto:support@cikgujay.com?subject=${mailSubject}&body=${mailBody}`;
+      window.location.href = `mailto:jaypah2@gmail.com?subject=${mailSubject}&body=${mailBody}`;
     });
   }
 

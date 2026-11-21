@@ -77,7 +77,7 @@
       "products.lead": "Leret atau klik anak panah pada setiap kad untuk melihat paparan sebenar perisian.",
       "products.viewAll": "Katalog Penuh",
       "products.search.label": "Cari produk digital",
-      "products.search.placeholder": "Cari STiM, Guru Ganti, OPR...",
+      "products.search.placeholder": "Cari STiM, e-GGs, OPR...",
       "products.upcoming.badge": "Dalam Pembangunan",
       "products.upcoming.title": "Produk Digital Seterusnya",
       "products.upcoming.desc": "Modul baharu pengurusan akademik dan pentadbiran sekolah sedang dibangunkan.",
@@ -154,13 +154,13 @@
       "faq.q4": "Bolehkah pautan produk diakses semula?",
       "faq.a4": "Ya. Simpan e-mel pengesahan anda atau hubungi sokongan kami bersama bukti pembelian untuk penghantaran semula.",
       "faq.q5": "Bagaimanakah cara mendapatkan bantuan teknikal?",
-      "faq.a5": "Hantar mesej melalui halaman Hubungi atau e-mel ke support@cikgujay.com berserta nama produk anda.",
+      "faq.a5": "Hantar mesej melalui halaman Hubungi atau e-mel ke jaypah2@gmail.com berserta nama produk anda.",
       "faq.q6": "Adakah pemasangan khas diperlukan pada komputer?",
       "faq.a6": "Tidak perlu pemasangan rumit. Semua perisian berfungsi terus pada pelayar web moden.",
 
       /* Section I: CTA */
       "cta.title": "Urus Sekolah Dengan Lebih Pantas Hari Ini.",
-      "cta.desc": "Dapatkan STiM, e-Guru Ganti dan e-OPR pada harga promosi semasa.",
+      "cta.desc": "Dapatkan STiM, e-GGs (e-Guru Ganti Sekolah) dan e-OPR pada harga promosi 10 terawal sahaja.",
       "cta.btn": "Lihat Semua Produk",
 
       /* Section J: Footer */
@@ -197,7 +197,7 @@
       "aboutPage.li3": "Akses Pantas: Penghantaran lesen dan panduan digital terus ke e-mel.",
       "aboutPage.li4": "Kualiti Berterusan: Penambahbaikan konsisten mengikut keperluan sebenar pendidik.",
       "aboutPage.h3": "Hala Tuju Ekosistem",
-      "aboutPage.p3": "Bersama STiM, e-Guru Ganti dan e-OPR, kami terus membangunkan modul digital baharu untuk sekolah moden.",
+      "aboutPage.p3": "Bersama STiM, e-GGs (e-Guru Ganti Sekolah) dan e-OPR, kami terus membangunkan modul digital baharu untuk sekolah moden.",
       "aboutPage.cta1": "Lihat Produk",
       "aboutPage.cta2": "Hubungi Kami",
 
@@ -233,11 +233,11 @@
       "contactPage.form.optUpcoming": "Makluman Produk Akan Datang",
       "contactPage.form.optGeneral": "Pertanyaan Umum",
       "contactPage.form.message": "Mesej",
-      "contactPage.form.messagePh": "Nyatakan produk pilihan (STiM, e-Guru Ganti, e-OPR) atau pertanyaan anda...",
+      "contactPage.form.messagePh": "Nyatakan produk pilihan (STiM, e-GGs, e-OPR) atau pertanyaan anda...",
       "contactPage.form.submit": "Hantar Pertanyaan E-mel",
       "contactPage.form.prefill": "Salam Cikgu Jay Resources,\n\nSaya berminat mendapatkan lesen bagi produk ",
       "contactPage.form.readyStrong": "Draf e-mel sedia dihantar.",
-      "contactPage.form.readyBody": "Membuka aplikasi e-mel ke support@cikgujay.com. Jika tidak dibuka automatik,",
+      "contactPage.form.readyBody": "Membuka aplikasi e-mel ke jaypah2@gmail.com. Jika tidak dibuka automatik,",
       "contactPage.form.readyLink": "klik di sini",
 
       /* Legal Pages */
@@ -254,7 +254,7 @@
       "privacyPage.h4": "4. Kerahsiaan Data",
       "privacyPage.p4": "Maklumat pelanggan tidak dijual atau dikongsi kepada mana-mana pihak ketiga.",
       "privacyPage.h5": "5. Hubungi Kami",
-      "privacyPage.p5": "Sebarang pertanyaan privasi boleh diajukan terus ke support@cikgujay.com.",
+      "privacyPage.p5": "Sebarang pertanyaan privasi boleh diajukan terus ke jaypah2@gmail.com.",
 
       "termsPage.title": "Terma & Syarat",
       "termsPage.lead": "Garis panduan pelesenan dan hak cipta produk Cikgu Jay Resources.",
@@ -332,7 +332,7 @@
       "products.lead": "Swipe or click the arrows on each card to inspect live software screens.",
       "products.viewAll": "Full Catalog",
       "products.search.label": "Search digital products",
-      "products.search.placeholder": "Search STiM, Relief, OPR...",
+      "products.search.placeholder": "Search STiM, e-GGs, OPR...",
       "products.upcoming.badge": "In Development",
       "products.upcoming.title": "Upcoming Digital Products",
       "products.upcoming.desc": "New digital tools for academic planning and school operations are in development.",
@@ -409,13 +409,13 @@
       "faq.q4": "Can I recover my product link later?",
       "faq.a4": "Yes. Keep your confirmation email or contact support with your purchase reference for prompt re-delivery.",
       "faq.q5": "How do I get technical support?",
-      "faq.a5": "Send a message via our Contact page or email support@cikgujay.com with your product name.",
+      "faq.a5": "Send a message via our Contact page or email jaypah2@gmail.com with your product name.",
       "faq.q6": "Is special software installation required?",
       "faq.a6": "No complex local setup required. All tools run smoothly in modern web browsers.",
 
       /* Section I: CTA */
       "cta.title": "Run Your School Workflows Faster Today.",
-      "cta.desc": "Get STiM, e-Guru Ganti, and e-OPR at special limited-time promotional pricing.",
+      "cta.desc": "Get STiM, e-GGs (e-Guru Ganti Sekolah), and e-OPR at special first-10 promotional pricing.",
       "cta.btn": "Explore All Products",
 
       /* Section J: Footer */
@@ -452,7 +452,7 @@
       "aboutPage.li3": "Fast Access: Direct digital license and guide delivery via email.",
       "aboutPage.li4": "Steady Refinement: Continuous updates shaped by real staffroom needs.",
       "aboutPage.h3": "Growing Suite",
-      "aboutPage.p3": "Alongside STiM, e-Guru Ganti, and e-OPR, new digital tools are actively built for modern educators.",
+      "aboutPage.p3": "Alongside STiM, e-GGs (e-Guru Ganti Sekolah), and e-OPR, new digital tools are actively built for modern educators.",
       "aboutPage.cta1": "View Products",
       "aboutPage.cta2": "Contact Us",
 
@@ -488,11 +488,11 @@
       "contactPage.form.optUpcoming": "Upcoming Product Notification",
       "contactPage.form.optGeneral": "General Inquiry",
       "contactPage.form.message": "Message",
-      "contactPage.form.messagePh": "Specify the product (STiM, e-Guru Ganti, e-OPR) or your question...",
+      "contactPage.form.messagePh": "Specify the product (STiM, e-GGs, e-OPR) or your question...",
       "contactPage.form.submit": "Send Email Inquiry",
       "contactPage.form.prefill": "Hello Cikgu Jay Resources,\n\nI would like to order / inquire about ",
       "contactPage.form.readyStrong": "Email draft ready.",
-      "contactPage.form.readyBody": "Opening your email app to support@cikgujay.com. If it did not open,",
+      "contactPage.form.readyBody": "Opening your email app to jaypah2@gmail.com. If it did not open,",
       "contactPage.form.readyLink": "click here",
 
       /* Legal Pages */
@@ -509,7 +509,7 @@
       "privacyPage.h4": "4. Data Confidentiality",
       "privacyPage.p4": "Customer and school contact records are never sold or shared with third parties.",
       "privacyPage.h5": "5. Contact",
-      "privacyPage.p5": "Email privacy inquiries directly to support@cikgujay.com.",
+      "privacyPage.p5": "Email privacy inquiries directly to jaypah2@gmail.com.",
 
       "termsPage.title": "Terms & Conditions",
       "termsPage.lead": "Software licensing and copyright terms for Cikgu Jay Resources.",

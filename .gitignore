@@ -1,0 +1,8 @@
+# Local agent & reference files (not part of live website)
+.agents/
+.claude/
+Display Unit/
+*.mp4
+skills-lock.json
+Thumbs.db
+.DS_Store

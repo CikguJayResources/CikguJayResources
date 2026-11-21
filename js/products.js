@@ -2,10 +2,10 @@
  * ==========================================================================
  * CIKGU JAY RESOURCES — CENTRALIZED PRODUCT, CAROUSEL & BILINGUAL CATALOG
  * ==========================================================================
- * OFFICIAL PRICING & DISCOUNTS:
- * 1. STiM: RM 500 (Diskaun 50% daripada RM 1,000 · Masa Terhad)
- * 2. e-Guru Ganti: RM 100 (Diskaun 57% daripada RM 230)
- * 3. e-OPR: RM 50 (Diskaun 67% daripada RM 150)
+ * OFFICIAL PRICING & DISCOUNTS (10 TERAWAL SAHAJA):
+ * 1. STiM: RM 500 (Diskaun 50% daripada RM 1,000 · 10 Terawal Sahaja)
+ * 2. e-GGs (e-Guru Ganti Sekolah): RM 100 (Diskaun 57% daripada RM 230 · 10 Terawal Sahaja)
+ * 3. e-OPR: RM 50 (Diskaun 67% daripada RM 150 · 10 Terawal Sahaja)
  *
  * COPYRIGHT PROTECTION:
  * Every product slide in assets/products/* carries the embedded
@@ -48,7 +48,7 @@
       targetAudienceLabel: "Sesuai Untuk",
       keyBenefitsTitle: "Kelebihan Utama",
       viewDetails: "Lihat Butiran",
-      purchaseNow: "Beli Lesen",
+      purchaseNow: "Beli Sekarang",
       notifyMe: "Maklumkan Saya",
       prevSlide: "Paparan sebelumnya",
       nextSlide: "Paparan seterusnya",
@@ -69,7 +69,7 @@
       overview: "Ringkasan Produk",
       capabilities: "Kelebihan & Fungsi Utama",
       deliverables: "Pakej Pembelian",
-      checkoutActiveCta: "Teruskan Pembayaran",
+      checkoutActiveCta: "Beli Sekarang",
       inquireLicensingCta: "Tempah / Pertanyaan Lesen",
       paymentInfoTitle: "Pembayaran & Penghantaran Digital",
       paymentActiveNote: "Transaksi selamat melalui gerbang pembayaran rasmi.",
@@ -94,7 +94,7 @@
       targetAudienceLabel: "Ideal For",
       keyBenefitsTitle: "Key Advantages",
       viewDetails: "View Details",
-      purchaseNow: "Buy License",
+      purchaseNow: "Buy Now",
       notifyMe: "Notify Me",
       prevSlide: "Previous screen",
       nextSlide: "Next screen",
@@ -115,7 +115,7 @@
       overview: "Product Summary",
       capabilities: "Key Advantages & Features",
       deliverables: "What You Receive",
-      checkoutActiveCta: "Proceed to Checkout",
+      checkoutActiveCta: "Buy Now",
       inquireLicensingCta: "Order / Licensing Inquiry",
       paymentInfoTitle: "Payment & Digital Delivery",
       paymentActiveNote: "Processed securely via verified payment gateway.",
@@ -140,12 +140,12 @@
       discountPercent: 50,
       currency: "RM",
       discountLabel: {
-        ms: "Diskaun 50% · Masa Terhad",
-        en: "50% OFF · Limited Time"
+        ms: "Diskaun 50% · 10 Terawal Sahaja",
+        en: "50% OFF · First 10 Only"
       },
       heroBadge: {
-        ms: "-50% · Masa Terhad",
-        en: "-50% · Limited Time"
+        ms: "-50% · 10 Terawal Sahaja",
+        en: "-50% · First 10 Only"
       },
       screenshot: "assets/products/stim/slide-01.jpg",
       image: "assets/products/stim/slide-01.jpg",
@@ -164,7 +164,7 @@
       featured: true,
       isFlagship: true,
       themeVariant: "navy",
-      checkoutUrl: "",
+      checkoutUrl: "https://cikgujayresources.bcl.my/form/stim-school-time-manager-bycikgujayresources",
       supportedGateways: "Billplz / BCL · ToyyibPay · CHIP",
       i18n: {
         ms: {
@@ -174,7 +174,7 @@
             "Bina jadual waktu induk, kelas dan guru bebas pertindihan dengan pengesanan konflik masa nyata.",
           longDescription:
             "STiM menyelaraskan agihan 44–46 waktu seminggu, had beban mengajar guru dan subjek serentak (PI/PM, BA/BKD) dalam satu pangkalan data pintar. Fungsi Master Grid Drag & Drop serta ConflictChecker memastikan jadual rasmi sekolah siap tepat tanpa pertindihan.",
-          pricingNote: "Lesen Penuh Sekolah · Harga Asal RM 1,000 (Jimat 50% Masa Terhad)",
+          pricingNote: "Lesen Penuh Sekolah · Harga Asal RM 1,000 (Diskaun 50% · 10 Terawal Sahaja)",
           imageAlt: "Paparan STiM School Timetable Manager",
           deliveryMethod: "Pautan akses sistem dan panduan lengkap dihantar terus ke e-mel.",
           compatibility: "Pelayar Web Komputer Meja & Riba",
@@ -200,7 +200,7 @@
             "Build conflict-free master, class, and teacher timetables with real-time clash detection.",
           longDescription:
             "STiM coordinates 44–46 weekly periods, teacher workload limits, and concurrent subjects (PI/PM, electives) in one smart database. Drag & Drop Master Grid and live ConflictChecker deliver accurate, print-ready schedules fast.",
-          pricingNote: "Full School License · Normal Price RM 1,000 (Save 50% Limited Time)",
+          pricingNote: "Full School License · Normal Price RM 1,000 (50% OFF · First 10 Only)",
           imageAlt: "STiM School Timetable Manager interface",
           deliveryMethod: "System access link and setup guide delivered directly via email.",
           compatibility: "Desktop & Laptop Web Browsers",
@@ -223,19 +223,19 @@
     },
     {
       id: "e-guru-ganti",
-      name: "e-Guru Ganti",
+      name: "e-GGs (e-Guru Ganti Sekolah)",
       category: "School Management",
       price: 100,
       originalPrice: 230,
       discountPercent: 57,
       currency: "RM",
       discountLabel: {
-        ms: "Diskaun 57%",
-        en: "57% OFF"
+        ms: "Diskaun 57% · 10 Terawal Sahaja",
+        en: "57% OFF · First 10 Only"
       },
       heroBadge: {
-        ms: "-57%",
-        en: "-57%"
+        ms: "-57% · 10 Terawal Sahaja",
+        en: "-57% · First 10 Only"
       },
       screenshot: "assets/products/e-guru-ganti/slide-01.jpg",
       image: "assets/products/e-guru-ganti/slide-01.jpg",
@@ -255,18 +255,18 @@
       featured: true,
       isFlagship: false,
       themeVariant: "slate",
-      checkoutUrl: "",
+      checkoutUrl: "https://cikgujayresources.bcl.my/form/e-guru-ganti-by-cikgujayresources",
       supportedGateways: "Billplz / BCL · ToyyibPay · CHIP",
       i18n: {
         ms: {
-          fullName: "Sistem Pengurusan Guru Ganti",
+          fullName: "Sistem Pengurusan Jadual Guru Ganti Sekolah",
           heroDesc: "Agihan relief harian, statistik & slip MMI",
           description:
             "Jana jadual guru ganti harian secara automatik, kawal beban mingguan dan cetak slip MMI dalam beberapa minit.",
           longDescription:
-            "e-Guru Ganti memadankan guru tidak hadir dengan guru berkelapangan secara automatik mengikut jadual induk. Dilengkapi mod ganti kecemasan, pemantauan had beban mingguan, penyata kehadiran harian serta cetakan 3–4 slip MMI sehelai.",
-          pricingNote: "Lesen Pengurusan Sekolah · Diskaun 57% daripada RM 230",
-          imageAlt: "Paparan sistem e-Guru Ganti",
+            "e-GGs (e-Guru Ganti Sekolah) memadankan guru tidak hadir dengan guru berkelapangan secara automatik mengikut jadual induk. Dilengkapi mod ganti kecemasan, pemantauan had beban mingguan, penyata kehadiran harian serta cetakan 3–4 slip MMI sehelai.",
+          pricingNote: "Lesen Pengurusan Sekolah · Harga Asal RM 230 (Diskaun 57% · 10 Terawal Sahaja)",
+          imageAlt: "Paparan sistem e-GGs (e-Guru Ganti Sekolah)",
           deliveryMethod: "Pautan akses sistem dan panduan pentadbir dihantar melalui e-mel.",
           compatibility: "Pelayar Web (Komputer, Riba & Tablet)",
           tags: ["Padanan Automatik", "Ganti Kecemasan", "Slip MMI A4", "Laporan PDF Bulanan"],
@@ -277,7 +277,7 @@
             "Cetakan Slip MMI & PDF: Jana slip mini A4, penyata kehadiran dan laporan bulanan."
           ],
           deliverables: [
-            "Akses penuh sistem e-Guru Ganti peringkat sekolah",
+            "Akses penuh sistem e-GGs (e-Guru Ganti Sekolah) peringkat sekolah",
             "Modul kehadiran guru, jadual induk & statistik bulanan",
             "Penjana PDF jadual harian, penyata kehadiran & slip MMI",
             "Panduan mula pantas & sokongan teknikal rasmi"
@@ -285,14 +285,14 @@
           idealFor: "PK Pentadbiran, Penyelaras Relief & Guru Bertugas"
         },
         en: {
-          fullName: "Relief Teacher Management System",
+          fullName: "School Relief Teacher Management System",
           heroDesc: "Automated relief matching, stats & MMI slips",
           description:
             "Automate daily relief teacher assignments, balance weekly workloads, and print MMI slips in minutes.",
           longDescription:
-            "e-Guru Ganti matches absent teachers with available staff automatically from your master schedule. Includes emergency relief mode, weekly workload caps, daily attendance rosters, and 3–4 per-sheet A4 MMI relief slips.",
-          pricingNote: "School Management License · 57% OFF from RM 230",
-          imageAlt: "e-Guru Ganti relief management system",
+            "e-GGs (e-Guru Ganti Sekolah) matches absent teachers with available staff automatically from your master schedule. Includes emergency relief mode, weekly workload caps, daily attendance rosters, and 3–4 per-sheet A4 MMI relief slips.",
+          pricingNote: "School Management License · Normal Price RM 230 (57% OFF · First 10 Only)",
+          imageAlt: "e-GGs (e-Guru Ganti Sekolah) relief management system",
           deliveryMethod: "System access link and admin guide delivered directly via email.",
           compatibility: "Modern Web Browsers (Desktop, Laptop & Tablet)",
           tags: ["Auto Matching", "Emergency Mode", "MMI A4 Slips", "Monthly PDF Reports"],
@@ -303,7 +303,7 @@
             "MMI Slips & PDF Reports: Print mini A4 slips, daily rosters, and monthly audits."
           ],
           deliverables: [
-            "Full school-level access to e-Guru Ganti",
+            "Full school-level access to e-GGs (e-Guru Ganti Sekolah)",
             "Teacher attendance, master schedule & analytics modules",
             "PDF generators for daily schedules, rosters & MMI slips",
             "Admin quick-start guide & technical support"
@@ -321,12 +321,12 @@
       discountPercent: 67,
       currency: "RM",
       discountLabel: {
-        ms: "Diskaun 67%",
-        en: "67% OFF"
+        ms: "Diskaun 67% · 10 Terawal Sahaja",
+        en: "67% OFF · First 10 Only"
       },
       heroBadge: {
-        ms: "-67%",
-        en: "-67%"
+        ms: "-67% · 10 Terawal Sahaja",
+        en: "-67% · First 10 Only"
       },
       screenshot: "assets/products/e-opr/slide-01.jpg",
       image: "assets/products/e-opr/slide-01.jpg",
@@ -340,7 +340,7 @@
       featured: true,
       isFlagship: false,
       themeVariant: "editorial",
-      checkoutUrl: "",
+      checkoutUrl: "https://cikgujayresources.bcl.my/form/e-opr-by-cikgujayresources",
       supportedGateways: "Billplz / BCL · ToyyibPay · CHIP",
       i18n: {
         ms: {
@@ -350,7 +350,7 @@
             "Siapkan One Page Report (OPR) A4 rasmi lengkap gambar aktiviti dan bantuan draf AI dalam 5 minit.",
           longDescription:
             "e-OPR menukar maklumat program dan sehingga 6 foto aktiviti terus kepada format One Page Report A4 rasmi yang kemas. Dilengkapi fungsi Jana Draf AI untuk objektif serta penilaian, tema warna mengikut unit sekolah dan eksport PDF satu muka surat penuh.",
-          pricingNote: "Lesen Perisian Digital · Diskaun 67% daripada RM 150",
+          pricingNote: "Lesen Perisian Digital · Harga Asal RM 150 (Diskaun 67% · 10 Terawal Sahaja)",
           imageAlt: "Paparan sistem e-OPR One Page Report",
           deliveryMethod: "Pautan akses produk dan panduan pengguna dihantar terus ke e-mel.",
           compatibility: "Pelayar Web (Komputer, Tablet & Telefon Pintar)",
@@ -376,7 +376,7 @@
             "Generate official A4 One Page Reports with auto-framed activity photos and AI drafting in under 5 minutes.",
           longDescription:
             "e-OPR formats program details and up to 6 activity photos directly into a clean official A4 One Page Report. Includes AI draft assistance for objectives and evaluations, unit-specific color themes, and crisp single-page PDF export.",
-          pricingNote: "Digital Software License · 67% OFF from RM 150",
+          pricingNote: "Digital Software License · Normal Price RM 150 (67% OFF · First 10 Only)",
           imageAlt: "e-OPR One Page Report generator interface",
           deliveryMethod: "Product access link and user guide sent directly via email.",
           compatibility: "Modern Web Browsers (Desktop, Tablet & Mobile)",
@@ -1199,7 +1199,13 @@
       : "";
 
     const checkoutBtnHtml = liveCheckout
-      ? `<a href="${escapeHtml(rawProduct.checkoutUrl.trim())}" class="btn btn--mint">${escapeHtml(ui.purchaseNow)}</a>`
+      ? `<a href="${escapeHtml(rawProduct.checkoutUrl.trim())}" class="btn btn--navy">
+          <span>${escapeHtml(ui.purchaseNow)}</span>
+          <svg class="icon-shift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>`
       : "";
 
     return `
@@ -1234,12 +1240,8 @@
               ${priceDisplayHtml}
             </div>
             <div class="product-flagship__actions">
-              <a href="${escapeHtml(detailsHref)}" class="btn btn--navy">
+              <a href="${escapeHtml(detailsHref)}" class="btn btn--outline">
                 <span>${escapeHtml(ui.viewDetails)}</span>
-                <svg class="icon-shift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
               </a>
               ${checkoutBtnHtml}
             </div>
@@ -1577,14 +1579,17 @@
     }
 
     const p = getLocalizedProduct(rawProduct);
-    document.title = `${p.name} (${p.fullName}) — Cikgu Jay Resources`;
+    document.title = p.name.includes("(")
+      ? `${p.name} — Cikgu Jay Resources`
+      : `${p.name} (${p.fullName}) — Cikgu Jay Resources`;
 
     const bcCurrent = document.getElementById("pdp-breadcrumb-name");
     if (bcCurrent) bcCurrent.textContent = p.name;
 
     const heroTitle = document.getElementById("pdp-hero-title");
     if (heroTitle) {
-      heroTitle.textContent = p.fullName ? `${p.name} — ${p.fullName}` : p.name;
+      heroTitle.textContent =
+        p.fullName && !p.name.includes("(") ? `${p.name} — ${p.fullName}` : p.name;
     }
 
     const heroLead = document.getElementById("pdp-hero-lead");
