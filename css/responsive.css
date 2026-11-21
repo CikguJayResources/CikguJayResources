@@ -22,6 +22,14 @@
     height: 31px;
   }
 
+  .brand-logo__img {
+    height: 38px;
+  }
+
+  .brand-logo__img--footer {
+    height: 36px;
+  }
+
   .lang-switcher__btn {
     min-width: 34px;
     min-height: 32px;

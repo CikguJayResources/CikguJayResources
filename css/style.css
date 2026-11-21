@@ -411,16 +411,50 @@ h1, h2, h3, h4 {
   font-size: 1.05rem;
   letter-spacing: -0.02em;
   color: var(--color-primary);
+  text-decoration: none;
+  transition: opacity var(--duration-fast) var(--ease-out), transform var(--duration-fast) var(--ease-out);
+}
+
+.brand-logo:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.brand-logo__img {
+  height: 48px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .brand-logo__mark {
-  width: 35px;
-  height: 35px;
+  width: 38px;
+  height: 38px;
   flex-shrink: 0;
 }
 
 .brand-logo--light {
   color: var(--color-on-navy);
+}
+
+.footer-brand__card {
+  display: inline-flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 6px 14px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  transition: transform var(--duration-fast) var(--ease-out), box-shadow var(--duration-fast) var(--ease-out);
+}
+
+.footer-brand__card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.brand-logo__img--footer {
+  height: 44px;
 }
 
 .nav-menu,
