@@ -1202,8 +1202,8 @@
                   <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #00D09C;"></span>
                   <strong style="font-size: 0.9rem; color: #101D32;">Tonton Video Demonstrasi e-GGs (2 Minit):</strong>
                 </div>
-                <div style="border-radius: 8px; overflow: hidden; background: #0B1526; aspect-ratio: 1920/944;">
-                  <video controls preload="metadata" poster="https://cikgujayresources.github.io/CikguJayResources/assets/videos/eggs-video-poster.jpg" playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                <div style="border-radius: 8px; overflow: hidden; background: #0B1526; aspect-ratio: 1920/944; position: relative;">
+                  <video id="embed-eggs-video" controls muted loop playsinline webkit-playsinline preload="auto" poster="https://cikgujayresources.github.io/CikguJayResources/assets/videos/eggs-video-poster.jpg" style="width: 100%; height: 100%; object-fit: cover; display: block; cursor: pointer;">
                     <source src="https://cikgujayresources.github.io/CikguJayResources/assets/videos/eggs-preview.mp4" type="video/mp4">
                     Pelayar anda tidak menyokong format video HTML5.
                   </video>
@@ -1533,6 +1533,25 @@
       state.current = (state.current + 1) % state.total;
       updateCarouselView(prodKey);
       resetAutoplay();
+
+    /* Video Scroll Autoplay for embed */
+    (function() {
+      const vid = document.getElementById('embed-eggs-video');
+      if (!vid) return;
+      vid.muted = true;
+      if ('IntersectionObserver' in window) {
+        const obs = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              vid.play().catch(function(){});
+            } else {
+              vid.pause();
+            }
+          });
+        }, { threshold: 0.2 });
+        obs.observe(vid);
+      }
+    })();
     }
 
     function prevSlide(prodKey) {

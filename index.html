@@ -428,20 +428,55 @@
         <div class="video-showcase-grid reveal">
           <!-- Video Frame Column -->
           <div class="video-frame-container">
-            <div class="video-frame-card">
+            <div class="video-frame-card" id="video-frame-card">
+              <!-- Live Indicator Badge -->
               <span class="video-badge-pill" id="video-badge-tag">
                 <span class="video-badge-pill__dot" aria-hidden="true"></span>
                 <span data-i18n="video.badge">Video Demo Penuh · 2:00 Minit</span>
               </span>
+
+              <!-- Sound Toggle Button (Unmute / Mute) -->
+              <button
+                type="button"
+                class="video-sound-btn"
+                id="video-sound-toggle"
+                aria-label="Hidupkan atau senyapkan bunyi video"
+                data-text-unmute="Hidupkan Suara"
+                data-text-mute="Senyapkan"
+              >
+                <svg class="sound-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <line x1="23" y1="9" x2="17" y2="15"></line>
+                  <line x1="17" y1="9" x2="23" y2="15"></line>
+                </svg>
+                <span class="sound-text">Hidupkan Suara</span>
+              </button>
+
+              <!-- Big Center Play Button Overlay (visible when paused) -->
+              <button
+                type="button"
+                class="video-center-play-btn"
+                id="video-center-play"
+                aria-label="Mainkan video"
+              >
+                <span class="video-center-play-btn__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                  </svg>
+                </span>
+                <span class="video-center-play-btn__label">Klik Untuk Main / Sambung</span>
+              </button>
+
               <video
                 id="eggs-video-player"
                 class="video-element"
                 controls
-                preload="metadata"
-                poster="assets/videos/eggs-video-poster.jpg"
+                muted
+                loop
                 playsinline
-                onplay="document.getElementById('video-badge-tag').style.opacity='0'"
-                onpause="document.getElementById('video-badge-tag').style.opacity='1'"
+                webkit-playsinline
+                preload="auto"
+                poster="assets/videos/eggs-video-poster.jpg"
               >
                 <source src="assets/videos/eggs-preview.mp4" type="video/mp4" />
                 Pelayar anda tidak menyokong format video HTML5. Sila gunakan pelayar moden seperti Google Chrome atau Microsoft Edge.
@@ -452,7 +487,7 @@
                 <circle cx="12" cy="12" r="10"></circle>
                 <polygon points="10 8 16 12 10 16 10 8"></polygon>
               </svg>
-              Klik butang main untuk menonton demonstrasi rakaman skrin sebenar sistem e-GGs (1080p Full HD bersuara).
+              Video berputar secara automatik (autoplay) setiap kali anda skrol ke bahagian ini. Klik butang <strong>"Hidupkan Suara"</strong> untuk mendengar penerangan audio, atau klik pada video untuk jeda/sambung.
             </p>
           </div>
 

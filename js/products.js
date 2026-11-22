@@ -1709,7 +1709,7 @@
                   <p class="pdp-video-lead">Saksikan demonstrasi fungsi sebenar antaramuka dan aliran kerja sistem dalam video penuh di bawah.</p>
                 </div>
                 <div class="video-frame-card">
-                  <video class="video-element" controls preload="metadata" poster="${escapeHtml(rawProduct.videoPoster || '')}" playsinline>
+                  <video class="video-element" controls muted loop playsinline webkit-playsinline preload="auto" poster="${escapeHtml(rawProduct.videoPoster || '')}" style="cursor:pointer;">
                     <source src="${escapeHtml(rawProduct.videoUrl)}" type="video/mp4" />
                     Pelayar anda tidak menyokong video HTML5.
                   </video>

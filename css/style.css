@@ -2908,3 +2908,116 @@ textarea.form-control {
   color: var(--color-text-muted);
   line-height: 1.55;
 }
+
+
+.video-element {
+  cursor: pointer;
+}
+
+.video-sound-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  background-color: rgba(16, 29, 50, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.video-sound-btn:hover {
+  background-color: #0D9488;
+  border-color: #00D09C;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(13, 148, 136, 0.4);
+}
+
+.video-sound-btn.is-unmuted {
+  background-color: #0D9488;
+  border-color: #00D09C;
+}
+
+.video-sound-btn .sound-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.video-center-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.video-frame-card.is-paused .video-center-play-btn {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.video-center-play-btn__icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: rgba(16, 29, 50, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00D09C;
+  transition: all 0.2s ease;
+}
+
+.video-center-play-btn__icon svg {
+  width: 28px;
+  height: 28px;
+  margin-left: 3px;
+}
+
+.video-center-play-btn:hover .video-center-play-btn__icon {
+  transform: scale(1.1);
+  background-color: #0D9488;
+  color: #FFFFFF;
+  border-color: #00D09C;
+}
+
+.video-center-play-btn__label {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background-color: rgba(16, 29, 50, 0.85);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}

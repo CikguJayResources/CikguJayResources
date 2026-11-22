@@ -77,6 +77,119 @@
   /* --------------------------------------------------------------------------
      3. Bilingual Contact & Licensing Inquiry Form Handler
      -------------------------------------------------------------------------- */
+  /* --------------------------------------------------------------------------
+     4. Scroll-Triggered Autoplay Video & Sound Controller
+     Autoplays the video whenever the user scrolls into view (muted, browser compliant),
+     pauses when scrolled away, and allows one-click sound unmuting and video clicking.
+     -------------------------------------------------------------------------- */
+  function initVideoScrollAutoplay() {
+    const video = document.getElementById("eggs-video-player") || document.querySelector("video.video-element");
+    if (!video) return;
+
+    const frameCard = document.getElementById("video-frame-card");
+    const soundToggle = document.getElementById("video-sound-toggle");
+    const centerPlayBtn = document.getElementById("video-center-play");
+    const badgeTag = document.getElementById("video-badge-tag");
+
+    // Always ensure muted & playsinline for 100% browser autoplay compatibility
+    video.muted = true;
+    video.playsInline = true;
+
+    function playVideo() {
+      const p = video.play();
+      if (p !== undefined) {
+        p.catch(function (err) {
+          console.warn("Autoplay was prevented by browser policy:", err);
+        });
+      }
+    }
+
+    function pauseVideo() {
+      video.pause();
+    }
+
+    video.addEventListener("play", function () {
+      if (frameCard) frameCard.classList.remove("is-paused");
+      if (badgeTag) badgeTag.style.opacity = "0";
+    });
+
+    video.addEventListener("pause", function () {
+      if (frameCard) frameCard.classList.add("is-paused");
+      if (badgeTag) badgeTag.style.opacity = "1";
+    });
+
+    if (centerPlayBtn) {
+      centerPlayBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        playVideo();
+      });
+    }
+
+    // Toggle play/pause when user clicks the video
+    video.addEventListener("click", function () {
+      if (video.paused) {
+        playVideo();
+      } else {
+        pauseVideo();
+      }
+    });
+
+    // Sound toggle button (Unmute / Mute)
+    if (soundToggle) {
+      soundToggle.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        video.muted = !video.muted;
+        updateSoundUI();
+        if (video.paused) {
+          playVideo();
+        }
+      });
+    }
+
+    function updateSoundUI() {
+      if (!soundToggle) return;
+      const soundIcon = soundToggle.querySelector(".sound-icon");
+      const soundText = soundToggle.querySelector(".sound-text");
+      if (video.muted) {
+        soundToggle.classList.remove("is-unmuted");
+        if (soundText) soundText.textContent = soundToggle.getAttribute("data-text-unmute") || "Hidupkan Suara";
+        if (soundIcon) {
+          soundIcon.innerHTML = '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line>';
+        }
+      } else {
+        soundToggle.classList.add("is-unmuted");
+        if (soundText) soundText.textContent = soundToggle.getAttribute("data-text-mute") || "Senyapkan";
+        if (soundIcon) {
+          soundIcon.innerHTML = '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>';
+        }
+      }
+    }
+
+    // IntersectionObserver: Autoplay every time user scrolls to the video section!
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              playVideo();
+            } else {
+              pauseVideo();
+            }
+          });
+        },
+        {
+          rootMargin: "0px 0px -40px 0px",
+          threshold: 0.2
+        }
+      );
+      observer.observe(video);
+    } else {
+      playVideo();
+    }
+  }
+
   function initContactForm() {
     const form = document.getElementById("cjr-contact-form");
     if (!form) return;
@@ -194,6 +307,7 @@
     initFaqAccordion();
     initScrollReveal();
     initContactForm();
+    initVideoScrollAutoplay();
   }
 
   if (document.readyState === "loading") {
