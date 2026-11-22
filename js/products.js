@@ -239,6 +239,8 @@
       },
       screenshot: "assets/products/e-guru-ganti/slide-01.jpg",
       image: "assets/products/e-guru-ganti/slide-01.jpg",
+      videoUrl: "assets/videos/eggs-preview.mp4",
+      videoPoster: "assets/videos/eggs-video-poster.jpg",
       images: [
         { src: "assets/products/e-guru-ganti/slide-01.jpg", caption: { ms: "Dashboard Pengurusan Guru Ganti (e-GGs)", en: "Relief Management Dashboard (e-GGs)" } },
         { src: "assets/products/e-guru-ganti/slide-02.jpg", caption: { ms: "Jadual Kelas — Status Guru", en: "Class-by-Class Teacher Status" } },
@@ -1697,6 +1699,25 @@
             <ul class="pdp-feature-list">
               ${deliverablesHtml}
             </ul>
+
+            ${
+              rawProduct.videoUrl
+                ? `
+              <div class="pdp-video-section">
+                <div class="pdp-video-header">
+                  <h2 class="pdp-video-title">Tonton Demonstrasi Sistem (2 Minit)</h2>
+                  <p class="pdp-video-lead">Saksikan demonstrasi fungsi sebenar antaramuka dan aliran kerja sistem dalam video penuh di bawah.</p>
+                </div>
+                <div class="video-frame-card">
+                  <video class="video-element" controls preload="metadata" poster="${escapeHtml(rawProduct.videoPoster || '')}" playsinline>
+                    <source src="${escapeHtml(rawProduct.videoUrl)}" type="video/mp4" />
+                    Pelayar anda tidak menyokong video HTML5.
+                  </video>
+                </div>
+              </div>
+            `
+                : ""
+            }
           </div>
         </div>
 

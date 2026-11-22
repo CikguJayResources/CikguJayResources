@@ -361,3 +361,11 @@
     gap: var(--space-14);
   }
 }
+
+
+@media (max-width: 1023px) {
+  .video-showcase-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+}

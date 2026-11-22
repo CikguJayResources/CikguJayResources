@@ -3,6 +3,7 @@
 .claude/
 Display Unit/
 *.mp4
+!assets/videos/*.mp4
 skills-lock.json
 Thumbs.db
 .DS_Store

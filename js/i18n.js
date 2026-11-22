@@ -83,6 +83,19 @@
       "products.upcoming.desc": "Modul baharu pengurusan akademik dan pentadbiran sekolah sedang dibangunkan.",
       "products.upcoming.cta": "Maklumkan Saya",
 
+      /* Section: Video Showcase */
+      "video.index": "Demonstrasi Video",
+      "video.title": "Tonton e-GGs Beraksi Secara Langsung",
+      "video.lead": "Lihat bagaimana e-GGs menyelesaikan tugasan jadual guru ganti, mengelakkan pertindihan waktu, dan menjana slip MMI serta laporan PDF rasmi dalam 2 minit.",
+      "video.badge": "Video Demo Penuh · 2:00 Minit",
+      "video.highlightsTitle": "Fungsi Utama Dalam Klip Video Ini:",
+      "video.h1": "<strong>Padanan Guru Ganti Pantas:</strong> Agihan relief automatik berdasarkan waktu luang tanpa pertindihan jadual.",
+      "video.h2": "<strong>Kawalan Had Beban Mingguan:</strong> Pengiraan pintar waktu ganti bagi memastikan beban seimbang antara guru.",
+      "video.h3": "<strong>Jadual & Roster Lengkap:</strong> Status guru mengikut kelas, jadual persendirian guru dan roster kehadiran harian.",
+      "video.h4": "<strong>Cetak Slip MMI & PDF Sedia Guna:</strong> Format slip mini A4 (3–4 keping sehelai) dan penyata kehadiran untuk edaran pagi.",
+      "video.ctaBuy": "Dapatkan e-GGs Sekarang (RM 100)",
+      "video.ctaDetails": "Ketahui Butiran Penuh e-GGs",
+
       /* Section: Built for Better School Management */
       "better.index": "Impak Pentadbiran",
       "better.title": "Pengurusan Sekolah Lebih Teratur",
@@ -337,6 +350,19 @@
       "products.upcoming.title": "Upcoming Digital Products",
       "products.upcoming.desc": "New digital tools for academic planning and school operations are in development.",
       "products.upcoming.cta": "Notify Me",
+
+      /* Section: Video Showcase */
+      "video.index": "Video Demonstration",
+      "video.title": "Watch e-GGs in Real-Time Action",
+      "video.lead": "See how e-GGs handles relief teacher scheduling, prevents timetable clashes, and prints A4 MMI slips & official PDF statements in just 2 minutes.",
+      "video.badge": "Full Video Walkthrough · 2:00 Minutes",
+      "video.highlightsTitle": "Key Features Shown in This Video:",
+      "video.h1": "<strong>Instant Relief Matching:</strong> Automatically pairs absent teachers with free-period colleagues without timetable clashes.",
+      "video.h2": "<strong>Weekly Workload Cap:</strong> Smart calculation ensuring relief duty hours remain fair and balanced across staff.",
+      "video.h3": "<strong>Master Grid & Daily Rosters:</strong> Class-by-class teacher status, individual duty timetables, and daily attendance logs.",
+      "video.h4": "<strong>Print MMI Slips & Official PDFs:</strong> Ready-to-cut A4 mini slips (3–4 per sheet) and audit-ready attendance statements.",
+      "video.ctaBuy": "Get e-GGs Now (RM 100)",
+      "video.ctaDetails": "Explore Full e-GGs Details",
 
       /* Section: Built for Better School Management */
       "better.index": "Operational Impact",

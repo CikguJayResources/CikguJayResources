@@ -408,6 +408,109 @@
     </section>
 
     <!-- ======================================================================
+         VIDEO DEMO SHOWCASE (e-GGs REAL-TIME SYSTEM DEMO)
+         ====================================================================== -->
+    <section class="video-showcase-section" id="video-demo" aria-labelledby="video-demo-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-index">
+            <span class="section-index__dot" aria-hidden="true"></span>
+            <span data-i18n="video.index">Demonstrasi Video</span>
+          </div>
+          <h2 class="section-title" id="video-demo-heading" data-i18n="video.title">
+            Tonton e-GGs Beraksi Secara Langsung
+          </h2>
+          <p class="section-lead" data-i18n="video.lead">
+            Lihat bagaimana e-GGs menyelesaikan tugasan jadual guru ganti, mengelakkan pertindihan waktu, dan menjana slip MMI serta laporan PDF rasmi dalam 2 minit.
+          </p>
+        </div>
+
+        <div class="video-showcase-grid reveal">
+          <!-- Video Frame Column -->
+          <div class="video-frame-container">
+            <div class="video-frame-card">
+              <span class="video-badge-pill" id="video-badge-tag">
+                <span class="video-badge-pill__dot" aria-hidden="true"></span>
+                <span data-i18n="video.badge">Video Demo Penuh · 2:00 Minit</span>
+              </span>
+              <video
+                id="eggs-video-player"
+                class="video-element"
+                controls
+                preload="metadata"
+                poster="assets/videos/eggs-video-poster.jpg"
+                playsinline
+                onplay="document.getElementById('video-badge-tag').style.opacity='0'"
+                onpause="document.getElementById('video-badge-tag').style.opacity='1'"
+              >
+                <source src="assets/videos/eggs-preview.mp4" type="video/mp4" />
+                Pelayar anda tidak menyokong format video HTML5. Sila gunakan pelayar moden seperti Google Chrome atau Microsoft Edge.
+              </video>
+            </div>
+            <p class="video-caption-note">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:16px; height:16px; display:inline-block; vertical-align:text-bottom; margin-right:4px; color:#0D9488;">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+              </svg>
+              Klik butang main untuk menonton demonstrasi rakaman skrin sebenar sistem e-GGs (1080p Full HD bersuara).
+            </p>
+          </div>
+
+          <!-- Highlights & Direct Actions Column -->
+          <div class="video-info-card">
+            <h3 class="video-info-title" data-i18n="video.highlightsTitle">Fungsi Utama Dalam Klip Video Ini:</h3>
+
+            <ul class="video-feature-list">
+              <li class="video-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="video.h1"><strong>Padanan Guru Ganti Pantas:</strong> Agihan relief automatik berdasarkan waktu luang tanpa pertindihan jadual.</span>
+              </li>
+              <li class="video-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="video.h2"><strong>Kawalan Had Beban Mingguan:</strong> Pengiraan pintar waktu ganti bagi memastikan beban seimbang antara guru.</span>
+              </li>
+              <li class="video-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="video.h3"><strong>Jadual & Roster Lengkap:</strong> Status guru mengikut kelas, jadual persendirian guru dan roster kehadiran harian.</span>
+              </li>
+              <li class="video-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="video.h4"><strong>Cetak Slip MMI & PDF Sedia Guna:</strong> Format slip mini A4 (3–4 keping sehelai) dan penyata kehadiran untuk edaran pagi.</span>
+              </li>
+            </ul>
+
+            <div class="video-actions">
+              <a
+                href="https://cikgujayresources.bcl.my/form/e-guru-ganti-by-cikgujayresources"
+                class="btn btn--navy"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="video.ctaBuy"
+              >
+                Dapatkan e-GGs Sekarang (RM 100)
+              </a>
+              <a
+                href="pages/product-details.html?id=e-guru-ganti"
+                class="btn btn--outline"
+                data-i18n="video.ctaDetails"
+              >
+                Ketahui Butiran Penuh e-GGs
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
          BUILT FOR BETTER SCHOOL MANAGEMENT (EDITORIAL LEDGER SECTION)
          ====================================================================== -->
     <section class="better-mgmt-section dark-context" id="better-management" aria-labelledby="better-heading">
