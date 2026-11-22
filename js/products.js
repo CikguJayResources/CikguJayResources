@@ -240,16 +240,20 @@
       screenshot: "assets/products/e-guru-ganti/slide-01.jpg",
       image: "assets/products/e-guru-ganti/slide-01.jpg",
       images: [
-        { src: "assets/products/e-guru-ganti/slide-01.jpg", caption: { ms: "Penjanaan Jadual Guru Ganti", en: "Daily Relief Generation" } },
-        { src: "assets/products/e-guru-ganti/slide-02.jpg", caption: { ms: "Status Guru Mengikut Kelas", en: "Class-by-Class Teacher Status" } },
-        { src: "assets/products/e-guru-ganti/slide-03.jpg", caption: { ms: "Jadual Persendirian Guru Bertugas", en: "Individual Duty Schedule" } },
-        { src: "assets/products/e-guru-ganti/slide-04.jpg", caption: { ms: "Jadual Keseluruhan & Kalendar", en: "Whole-School Grid & Calendar" } },
-        { src: "assets/products/e-guru-ganti/slide-05.jpg", caption: { ms: "Statistik & Kawalan Beban Mingguan", en: "Weekly Relief Load Analytics" } },
-        { src: "assets/products/e-guru-ganti/slide-06.jpg", caption: { ms: "Roster Kehadiran Guru Harian", en: "Daily Teacher Attendance Roster" } },
-        { src: "assets/products/e-guru-ganti/slide-07.jpg", caption: { ms: "Cetakan Slip MMI Mini A4", en: "Mini A4 MMI Relief Slips" } },
-        { src: "assets/products/e-guru-ganti/slide-08.jpg", caption: { ms: "Dokumen PDF Jadual Guru Ganti", en: "Official Relief Schedule PDF" } },
-        { src: "assets/products/e-guru-ganti/slide-09.jpg", caption: { ms: "Penyata Harian Kehadiran PDF", en: "Daily Attendance Statement PDF" } },
-        { src: "assets/products/e-guru-ganti/slide-10.jpg", caption: { ms: "Laporan Bulanan Guru Ganti PDF", en: "Monthly Relief Audit PDF" } }
+        { src: "assets/products/e-guru-ganti/slide-01.jpg", caption: { ms: "Dashboard Pengurusan Guru Ganti (e-GGs)", en: "Relief Management Dashboard (e-GGs)" } },
+        { src: "assets/products/e-guru-ganti/slide-02.jpg", caption: { ms: "Jadual Kelas — Status Guru", en: "Class-by-Class Teacher Status" } },
+        { src: "assets/products/e-guru-ganti/slide-03.jpg", caption: { ms: "Jadual Waktu Kelas & Ganti", en: "Class Timetable & Relief Details" } },
+        { src: "assets/products/e-guru-ganti/slide-04.jpg", caption: { ms: "Jadual Persendirian Guru", en: "Individual Teacher Timetable" } },
+        { src: "assets/products/e-guru-ganti/slide-05.jpg", caption: { ms: "Jadual Guru Bertugas & Tugasan Pengganti", en: "Duty Schedule & Assigned Replacement" } },
+        { src: "assets/products/e-guru-ganti/slide-06.jpg", caption: { ms: "Jadual Keseluruhan Sekolah (Master Grid Relief)", en: "Whole-School Master Relief Grid" } },
+        { src: "assets/products/e-guru-ganti/slide-07.jpg", caption: { ms: "Statistik & Laporan Penggantian", en: "Relief Statistics & Reports" } },
+        { src: "assets/products/e-guru-ganti/slide-08.jpg", caption: { ms: "Beban Tugasan Guru Ganti Mingguan", en: "Weekly Relief Workload Cap Analytics" } },
+        { src: "assets/products/e-guru-ganti/slide-09.jpg", caption: { ms: "Rekod & Status Kehadiran Guru", en: "Teacher Attendance Records" } },
+        { src: "assets/products/e-guru-ganti/slide-10.jpg", caption: { ms: "Roster Status Kehadiran Guru Harian", en: "Daily Teacher Attendance Roster" } },
+        { src: "assets/products/e-guru-ganti/slide-11.jpg", caption: { ms: "Dokumen PDF Jadual Guru Ganti Rasmi", en: "Official Relief Schedule PDF" } },
+        { src: "assets/products/e-guru-ganti/slide-12.jpg", caption: { ms: "Laporan Bulanan Guru Ganti (PDF)", en: "Monthly Relief Audit Report (PDF)" } },
+        { src: "assets/products/e-guru-ganti/slide-13.jpg", caption: { ms: "Penyata Harian Kehadiran & Guru Ganti (PDF)", en: "Daily Attendance & Relief Statement (PDF)" } },
+        { src: "assets/products/e-guru-ganti/slide-14.jpg", caption: { ms: "Slip Guru Ganti MMI Mini A4 (3-4 Slip Sehelai)", en: "Mini A4 MMI Relief Slips (3-4 per sheet)" } }
       ],
       status: "available",
       featured: true,
@@ -976,6 +980,7 @@
         const carousel = prevBtn.closest("[data-cjr-carousel]");
         const cur = parseInt(carousel.getAttribute("data-active-index") || "0", 10);
         setCarouselSlide(carousel, cur - 1);
+        resetAutoplay();
         return;
       }
 
@@ -986,6 +991,7 @@
         const carousel = nextBtn.closest("[data-cjr-carousel]");
         const cur = parseInt(carousel.getAttribute("data-active-index") || "0", 10);
         setCarouselSlide(carousel, cur + 1);
+        resetAutoplay();
         return;
       }
 
@@ -996,6 +1002,7 @@
         const carousel = dotBtn.closest("[data-cjr-carousel]");
         const targetIdx = parseInt(dotBtn.getAttribute("data-carousel-dot") || "0", 10);
         setCarouselSlide(carousel, targetIdx);
+        resetAutoplay();
         return;
       }
 
@@ -1005,6 +1012,7 @@
         const carousel = thumbBtn.closest("[data-cjr-carousel]");
         const targetIdx = parseInt(thumbBtn.getAttribute("data-carousel-thumb") || "0", 10);
         setCarouselSlide(carousel, targetIdx);
+        resetAutoplay();
         return;
       }
 
@@ -1102,14 +1110,53 @@
         if (Math.abs(dx) > 36 && Math.abs(dx) > Math.abs(dy) * 1.2) {
           const cur = parseInt(activeTouchCarousel.getAttribute("data-active-index") || "0", 10);
           setCarouselSlide(activeTouchCarousel, dx < 0 ? cur + 1 : cur - 1);
+          resetAutoplay();
         }
+        const touched = activeTouchCarousel;
         activeTouchCarousel = null;
+        setTimeout(function () {
+          if (touched) touched.removeAttribute("data-autoplay-paused");
+        }, 1500);
       },
       { passive: true }
     );
   }
 
+  
+  /* --------------------------------------------------------------------------
+     Automatic Carousel Autoplay Loop (Every 3 Seconds, Seamless Loop from 1)
+     -------------------------------------------------------------------------- */
+  const AUTOPLAY_INTERVAL = 3000;
+  let autoplayTimerId = null;
+
+  function runAutoplayTick() {
+    if (lightboxEl && lightboxEl.classList.contains("is-open")) return;
+
+    const carousels = document.querySelectorAll("[data-cjr-carousel]");
+    carousels.forEach(function (carousel) {
+      if (carousel.matches(":hover") || carousel.getAttribute("data-autoplay-paused") === "true") {
+        return;
+      }
+      const total = parseInt(carousel.getAttribute("data-total-slides") || "1", 10);
+      if (total <= 1) return;
+
+      const cur = parseInt(carousel.getAttribute("data-active-index") || "0", 10);
+      const next = (cur + 1) % total;
+      setCarouselSlide(carousel, next);
+    });
+  }
+
+  function resetAutoplay() {
+    if (autoplayTimerId) clearInterval(autoplayTimerId);
+    autoplayTimerId = setInterval(runAutoplayTick, AUTOPLAY_INTERVAL);
+  }
+
+  function startAutoplayLoop() {
+    resetAutoplay();
+  }
+
   bindGlobalCarouselEvents();
+  startAutoplayLoop();
 
   /* --------------------------------------------------------------------------
      Homepage Hero 3-Product Interactive Suite Renderer
